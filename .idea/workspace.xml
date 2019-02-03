@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37cdf44b-2996-4abc-8b80-5636574e368e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NumericalAnalysis/PlotCorrelations.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ProcessData.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/X_Correlations.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/Y_Correlations.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PetAdoption.iml" afterPath="$PROJECT_DIR$/.idea/PetAdoption.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/FFW.py" afterPath="$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/FFW.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NumericalAnalysis/PlotCorrelations.py" afterPath="$PROJECT_DIR$/NumericalAnalysis/PlotCorrelations.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Parsers.py" afterPath="$PROJECT_DIR$/Parsers.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/NumericalAnalysis/FFWParameterSearch.py" afterPath="$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/DropoutSearch.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/NumericalAnalysis/plots/FFW_Training_And_Test_Error.png" afterPath="$PROJECT_DIR$/NumericalAnalysis/Plots/FFW_Training_And_Test_Error.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/NumericalAnalysis/plots/FFW_Training_Curves.png" afterPath="$PROJECT_DIR$/NumericalAnalysis/Plots/FFW_Training_Curves.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/NumericalAnalysis/plots/XX_Correlations.png" afterPath="$PROJECT_DIR$/NumericalAnalysis/Plots/XX_Correlations.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/NumericalAnalysis/plots/XY_Correlations.png" afterPath="$PROJECT_DIR$/NumericalAnalysis/Plots/XY_Correlations.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,12 +20,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="FFWParameterSearch.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NumericalAnalysis/FFWParameterSearch.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DropoutSearch.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/DropoutSearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="264">
+              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -34,8 +36,8 @@
       <file leaf-file-name="FFW.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/FFW.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+            <state relative-caret-position="1518">
+              <caret line="73" column="73" lean-forward="false" selection-start-line="73" selection-start-column="73" selection-end-line="73" selection-end-column="73" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -43,14 +45,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlotCorrelations.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumericalAnalysis/PlotCorrelations.py">
+      <file leaf-file-name="DropoutSearch.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ImageAnalysis/NeuralNetworks/DropoutSearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="352">
+              <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Conv.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ImageAnalysis/NeuralNetworks/Conv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="826">
+              <caret line="100" column="102" lean-forward="false" selection-start-line="100" selection-start-column="102" selection-end-line="100" selection-end-column="102" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,18 +85,21 @@
         <option value="$PROJECT_DIR$/ProcessData.py" />
         <option value="$PROJECT_DIR$/PlotCorrelations.py" />
         <option value="$PROJECT_DIR$/NumericalAnalysis/PlotCorrelations.py" />
-        <option value="$PROJECT_DIR$/Parsers.py" />
         <option value="$PROJECT_DIR$/NumericalAnalysis/FFW_ANN.py" />
-        <option value="$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/FFW.py" />
         <option value="$PROJECT_DIR$/NumericalAnalysis/FFWParameterSearch.py" />
+        <option value="$PROJECT_DIR$/Parsers.py" />
+        <option value="$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/FFW.py" />
+        <option value="$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/DropoutSearch.py" />
+        <option value="$PROJECT_DIR$/ImageAnalysis/NeuralNetworks/DropoutSearch.py" />
+        <option value="$PROJECT_DIR$/ImageAnalysis/NeuralNetworks/Conv.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-6" />
     <option name="y" value="40" />
-    <option name="width" value="2127" />
-    <option name="height" value="1274" />
+    <option name="width" value="2454" />
+    <option name="height" value="1318" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -101,8 +116,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,13 +128,29 @@
             <path>
               <item name="PetAdoption" type="b2602c69:ProjectViewProjectNode" />
               <item name="PetAdoption" type="462c0819:PsiDirectoryNode" />
+              <item name="ImageAnalysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetAdoption" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetAdoption" type="462c0819:PsiDirectoryNode" />
+              <item name="ImageAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="NeuralNetworks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetAdoption" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetAdoption" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetAdoption" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetAdoption" type="462c0819:PsiDirectoryNode" />
               <item name="NumericalAnalysis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PetAdoption" type="b2602c69:ProjectViewProjectNode" />
               <item name="PetAdoption" type="462c0819:PsiDirectoryNode" />
               <item name="NumericalAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="plots" type="462c0819:PsiDirectoryNode" />
+              <item name="NeuralNetworks" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -133,6 +164,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PetAdoption\NumericalAnalysis\NeuralNetworks" />
       <recent name="E:\PetAdoption\NumericalAnalysis" />
     </key>
   </component>
@@ -148,7 +180,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.FFWParameterSearch">
+  <component name="RunManager" selected="Python.DropoutSearch (1)">
+    <configuration name="DropoutSearch (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ImageAnalysis/NeuralNetworks" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PetAdoption" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImageAnalysis/NeuralNetworks/DropoutSearch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="DropoutSearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PetAdoption" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/DropoutSearch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="FFWParameterSearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -161,7 +227,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PetAdoption" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NumericalAnalysis/FFWParameterSearch.py" />
+      <option name="SCRIPT_NAME" value="E:\PetAdoption\NumericalAnalysis\NeuralNetworks\DropoutSearch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="Parsers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PetAdoption" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parsers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,52 +266,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="PlotCorrelations" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PetAdoption" />
-      <option name="SCRIPT_NAME" value="E:\PetAdoption\NumericalAnalysis\PlotCorrelations.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="ProcessData" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PetAdoption" />
-      <option name="SCRIPT_NAME" value="E:\PetAdoption\NumericalAnalysis\PlotCorrelations.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.ProcessData" />
-      <item index="1" class="java.lang.String" itemvalue="Python.PlotCorrelations" />
-      <item index="2" class="java.lang.String" itemvalue="Python.PlotCorrelations (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.FFWParameterSearch" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.PlotCorrelations (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.FFWParameterSearch" />
+      <item index="2" class="java.lang.String" itemvalue="Python.DropoutSearch" />
+      <item index="3" class="java.lang.String" itemvalue="Python.DropoutSearch (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Parsers" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.FFWParameterSearch" />
-        <item index="1" class="java.lang.String" itemvalue="Python.PlotCorrelations (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.PlotCorrelations" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ProcessData" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.DropoutSearch (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.DropoutSearch" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Parsers" />
+        <item index="3" class="java.lang.String" itemvalue="Python.FFWParameterSearch" />
+        <item index="4" class="java.lang.String" itemvalue="Python.PlotCorrelations (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -246,26 +297,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="40" width="2127" height="1274" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="40" width="2454" height="1318" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20657958" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18462823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2891037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31387478" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39982426" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915622" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282572" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -274,11 +324,135 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/DropoutSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/FFW.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="73" column="73" lean-forward="true" selection-start-line="73" selection-start-column="73" selection-end-line="73" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageAnalysis/NeuralNetworks/DropoutSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageAnalysis/NeuralNetworks/Conv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="100" column="102" lean-forward="true" selection-start-line="100" selection-start-column="102" selection-end-line="100" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageAnalysis/NeuralNetworks/Conv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1804">
+          <caret line="82" column="35" lean-forward="false" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageAnalysis/NeuralNetworks/DropoutSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1474">
+          <caret line="72" column="3" lean-forward="false" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/PlotCorrelations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/DropoutSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/FFW.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="82" column="26" lean-forward="false" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/PlotCorrelations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/DropoutSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/FFW.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/PlotCorrelations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -288,81 +462,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plots/Correlations.png" />
     <entry file="file://$PROJECT_DIR$/plots/Y_ScatterPlots.png" />
-    <entry file="file://$PROJECT_DIR$/plots/Y_Correlations.png">
+    <entry file="file://$PROJECT_DIR$/plots/Y_Correlations.png" />
+    <entry file="file://$PROJECT_DIR$/plots/X_Correlations.png" />
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/Plots/XY_Correlations.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plots/X_Correlations.png">
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/Plots/XX_Correlations.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/plots/XY_Correlations.png">
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/FFW_ANN.py" />
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/Plots/FFW_Training_Curves.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/plots/XX_Correlations.png">
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/Plots/FFW_Training_And_Test_Error.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/FFW_ANN.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="374">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parsers.py">
+    <entry file="file://$USER_HOME$/AppData/Local/conda/conda/envs/tensorflow/Lib/site-packages/sklearn/model_selection/_split.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1342">
-          <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="329" column="0" lean-forward="false" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NumericalAnalysis/PlotCorrelations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="616">
+          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageAnalysis/Plots/Conv_Training_Curves.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageAnalysis/Plots/Conv_Training_And_Test_Error.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="96" column="77" lean-forward="false" selection-start-line="96" selection-start-column="77" selection-end-line="96" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/DropoutSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/plots/FFW_Training_Curves.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NumericalAnalysis/NeuralNetworks/FFW.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+        <state relative-caret-position="1518">
+          <caret line="73" column="73" lean-forward="false" selection-start-line="73" selection-start-column="73" selection-end-line="73" selection-end-column="73" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/plots/FFW_Training_And_Test_Error.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NumericalAnalysis/FFWParameterSearch.py">
+    <entry file="file://$PROJECT_DIR$/ImageAnalysis/NeuralNetworks/DropoutSearch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="352">
+          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageAnalysis/NeuralNetworks/Conv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="100" column="102" lean-forward="false" selection-start-line="100" selection-start-column="102" selection-end-line="100" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>

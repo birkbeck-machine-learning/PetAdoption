@@ -1,18 +1,26 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from collections import OrderedDict
+import os
 
-from NumericalAnalysis.NeuralNetworks.FFW import FFWWithKFold
-from Parsers import GetNumericalTrainingData
+from Parsers import GetImageTrainingData
+from ImageAnalysis.NeuralNetworks.Conv import TrainConvWithKFold
 
-X_train_numerical, y_train, data_type_dict = GetNumericalTrainingData()
+im_width = 84
+im_height = 84
+X_train, y_train = GetImageTrainingData(im_width, im_height)
 
-print('Number of Examples: ' + str(X_train_numerical.shape[0]))
-print('Number of Features: ' + str(X_train_numerical.shape[1]))
+print('Number of Examples: ' + str(X_train.shape[0]))
 
-dropout_rates = [0, .2, .4, .6, .8]
-num_units = [40, 40, 40]
-num_epochs = 10000
+dropout_rates = [0, .1, .2, .3, .4]
+filters = [32, 64, 64]
+kernels = [8, 4, 3]
+strides = [4, 2, 1]
+dense_units = [128, 64]
+num_outputs = 1
+learning_rate = .0001
+num_epochs = 100000
+batch_size = 32
 
 training_results = []
 test_results = []
@@ -20,15 +28,16 @@ test_results = []
 for dropout_rate in dropout_rates:
 
     print('Cross Validating Dropout Rate: ' + str(dropout_rate))
-    training_error, test_error = FFWWithKFold(Inputs=X_train_numerical.values, Targets=y_train.values,
-                                              num_units=num_units, num_outputs=1,
-                                              learning_rate=.0001, num_epochs=num_epochs)
+    training_error, test_error = TrainConvWithKFold(X_train, y_train, im_width, im_height,
+                                                    filters, kernels, strides, dense_units,
+                                                    num_outputs, learning_rate, num_epochs,
+                                                    batch_size, dropout_rate)
 
     training_results.append(training_error)
     test_results.append(test_error)
 
 
-colours = ['r', 'b', 'c', 'k']
+colours = ['r', 'b', 'c', 'k', 'g']
 
 # Training Curves
 plt.figure()
@@ -44,7 +53,7 @@ for i in range(dropout_rates.__len__()):
 plt.legend()
 plt.ylabel('Mean Squared Error')
 plt.xlabel('Training Epoch')
-plt.savefig('plots/FFW_Training_Curves.png')
+plt.savefig(os.path.join(os.path.dirname(__file__), '..', 'Plots/Conv_Training_Curves.png'))
 plt.close()
 
 # Training and Test Error
@@ -65,5 +74,5 @@ handles, labels = plt.gca().get_legend_handles_labels()
 by_label = OrderedDict(zip(labels, handles))
 plt.legend(by_label.values(), by_label.keys())
 plt.legend(by_label.values(), by_label.keys())
-plt.savefig('plots/FFW_Training_And_Test_Error.png')
+plt.savefig(os.path.join(os.path.dirname(__file__), '..', 'Plots/Conv_Training_And_Test_Error.png'))
 plt.close()

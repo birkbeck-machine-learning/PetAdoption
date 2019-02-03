@@ -17,7 +17,7 @@ for i, column in enumerate(cols):
 plt.figure(figsize=(10, 10))
 plt.bar(np.arange(corrcoefs.shape[0]), corrcoefs)
 plt.xticks(np.arange(corrcoefs.shape[0]), cols, rotation=270)
-plt.savefig('plots/XY_Correlations.png')
+plt.savefig('Plots/XY_Correlations.png')
 plt.close()
 
 # Examine the correlations between input variables
@@ -28,5 +28,5 @@ cax = ax.imshow(X_corr.values, interpolation='nearest')
 plt.xticks(np.arange(X_corr.shape[0]), cols, rotation=270)
 plt.yticks(np.arange(X_corr.shape[0]), cols)
 fig.colorbar(cax)
-plt.savefig('plots/XX_Correlations.png')
+plt.savefig('Plots/XX_Correlations.png')
 plt.close()

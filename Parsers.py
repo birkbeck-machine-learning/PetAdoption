@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 import os
+import cv2
+import glob
 
 from enum import Enum
 
@@ -71,3 +73,27 @@ def GetTextTrainingData():
     X_train_text = X_train.drop(numerical_cols, axis=1)
 
     return X_train_text, y_train
+
+def GetImageTrainingData(im_width, im_height):
+
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    df_train = pd.read_csv(dir_path + "/input/train/train.csv")
+
+    im_dict = {'Image': [], 'AdoptionSpeed': []}
+    files = os.path.dirname(os.path.realpath(__file__)) + '/input/train_images/*.jpg'
+    files = glob.glob(files)
+
+    for i, filename in enumerate(files):
+        image = cv2.imread(filename)
+        image = cv2.resize(image, (im_width, im_height))
+        im_dict['Image'].append(image)
+
+        ID = filename.split('\\')[-1].split('-')[0]
+        ind = df_train.index[df_train['PetID'] == ID].tolist()[0]
+        adop_speed = df_train.iloc[ind]['AdoptionSpeed']
+        im_dict['AdoptionSpeed'].append(adop_speed)
+
+        if(i % 1000 == 0):
+            print('Processed image ' + str(i) + ' / ' + str(files.__len__()))
+
+    return np.array(im_dict['Image']), np.array(im_dict['AdoptionSpeed'])

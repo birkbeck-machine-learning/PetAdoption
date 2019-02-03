@@ -5,7 +5,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import KFold
 
 
-def FFWWithKFold(Inputs, Targets, num_units, num_outputs, learning_rate, num_epochs):
+def TrainFFWWithKFold(Inputs, Targets, num_units, num_outputs, learning_rate, num_epochs, batch_size, dropout_rate):
 
     mms = MinMaxScaler()
     kf = KFold(n_splits=5)
@@ -36,7 +36,6 @@ def FFWWithKFold(Inputs, Targets, num_units, num_outputs, learning_rate, num_epo
         y = tf.placeholder(tf.float32, shape=(None), name="y")
 
         training = tf.placeholder_with_default(False, shape=(), name='training')
-        dropout_rate = 0.5  # 1 - keep_prob
 
         hidden_layers = []
 
@@ -64,15 +63,16 @@ def FFWWithKFold(Inputs, Targets, num_units, num_outputs, learning_rate, num_epo
 
         init = tf.global_variables_initializer()
 
-        # Execution Phase """
+        # Execution Phase
         with tf.Session() as sess:
             init.run()
 
             for epoch in range(num_epochs):
                 if(epoch % 100 == 0):
                     print('Epoch: ' + str(epoch) + ' / ' + str(num_epochs))
-                sess.run(training_op, feed_dict={X: X_train, y: y_train, training: True})
 
+                inds = np.random.randint(0, X_train.shape[0], batch_size)
+                sess.run(training_op, feed_dict={X: X_train[inds], y: y_train[inds], training: True})
                 TrainingErrors[fold_num].append(mse.eval(feed_dict={X: X_train, y: y_train, training: False}))
 
             TrainingErrors.append([])
