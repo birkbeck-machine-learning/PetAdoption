@@ -19,7 +19,7 @@ strides = [4, 2, 1]
 dense_units = [128, 64]
 num_outputs = 1
 learning_rate = .0001
-num_epochs = 100000
+num_epochs = 10000
 batch_size = 32
 
 training_results = []
